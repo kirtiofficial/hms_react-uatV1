@@ -1,0 +1,123 @@
+@import '../../Constants/ColorConstant.module.css';
+
+.mobileNumContainer {
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.inputContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #1ABDC4;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.dropDownContainer {
+    width: 20%;
+    /* background-color: aquamarine; */
+    position: relative;
+    display: flex;
+    border-right: 1px solid var(--primaryColor);
+    background-color: transparent;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.inputBox {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 14px;
+    color: var(--Color3);
+    /* padding: 2%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inputBox::placeholder {
+    color: #979797;
+    font-family: 'Inter', sans-serif;
+}
+
+.inSideDropDownContainer {
+    color: var(--Color3);
+    top: -20px;
+    height: 100%;
+    width: 90%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.selectContainer {
+    width: 100%;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    outline: none;
+    font-size: 12px;
+}
+
+.inSideDropDownContainerBlock {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.titleStyle {
+    margin: 0px;
+    font-size: 14px;
+    padding: 0px 0px 5px;
+    color: var(--Color3);
+    font-weight: 500;
+}
+
+.selectContainer::-webkit-scrollbar {
+    width: 2;
+}
+
+/* / Track / */
+.selectContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* / Handle / */
+.selectContainer::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+/* / Handle on hover / */
+.selectContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.submitButton {
+    height: 28%;
+    width: 100%;
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+    border: none;
+    text-align: center;
+    padding: 5px 0px;
+    margin: 0px auto;
+    border-radius: 10px;
+    /* justify-content: center; */
+}

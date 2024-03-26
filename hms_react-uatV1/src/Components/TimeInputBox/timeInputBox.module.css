@@ -1,0 +1,134 @@
+@import '../../Constants/ColorConstant.module.css';
+
+.inputBoxWrapper {
+  /* border: 1px solid red;  */
+  width: 70%;
+  position: relative;
+
+}
+
+.titleStyle {
+  margin: 0px;
+  font-size: 14px;
+  padding: 0px 0px 5px;
+  /* color: var(--Color10); */
+  font-weight: 500;
+}
+
+.inputBoxContainer {
+  border-radius: 2px;
+  position: relative;
+  width: '100%';
+}
+
+.inputBox {
+  width: 90%;
+  padding: 6px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #66708580;
+  background-color: #fff;
+}
+
+.errormsgStyle {
+  color: red;
+  margin: 0px;
+  font-size: 12px;
+
+}
+
+.loaderstyle {
+  /* width: 20%; */
+}
+
+/* Style for the input[type="time"] */
+input[type="time"] {
+  /* padding: 8px; */
+  border: 1px solid var(--Color11);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style for the time picker arrow button */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  display: none;
+  /* width:100%; */
+  /* z-index:-1000 */
+}
+
+/* Optional: Style for the time picker itself (for Webkit browsers) */
+input[type="time"]::-webkit-datetime-edit-hour-field,
+input[type="time"]::-webkit-datetime-edit-minute-field,
+input[type="time"]::-webkit-datetime-edit-ampm-field {
+  padding: 0.5em;
+}
+
+/* Optional: Style for the time picker arrows (for Firefox) */
+input[type="time"]::-moz-time-seconds-field,
+input[type="time"]::-moz-time-ampm-field {
+  display: none;
+  z-index: 1000;
+}
+
+/* Optional: Style for the time picker arrows (for Firefox) */
+input[type="time"]::-moz-time-hour,
+input[type="time"]::-moz-time-minute,
+input[type="time"]::-moz-time-ampm {
+  padding: 0.5em;
+  z-index: 1000;
+
+}
+
+.scheduleFromModalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  outline: none;
+  background-color: var(--modelContainerWrapperBackGroundColor);
+
+}
+
+div.scrollablecontainer {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  /* For Firefox */
+  padding: 5px;
+}
+
+.scrollablecontainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollablecontainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollablecontainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.scrollablecontainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+div.scrollablecontainer::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primaryColor);
+  /* Hover color */
+}
+
+.timeButton {
+  color: #000;
+  border: none;
+  margin: 0px;
+  padding: 3px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: transparent;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  font-size: 12px;
+}

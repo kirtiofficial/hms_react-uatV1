@@ -1,0 +1,206 @@
+.fdmDashContainer {
+    height: 80vh;
+    background-color: var(--Color16);
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    flex: 1;
+    padding: 1%;
+    overflow: hidden;
+    /* border: solid; */
+    cursor: pointer;
+}
+
+.headerImgContainer {
+    height: 90%; 
+    width: 98%;
+    display: flex;
+    /* flex: 0.98; */
+    background-image: url('../../../../Images/fdmDashHeadBg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: end;
+    justify-content: left;
+    border-radius: 6px;
+    /* position: absolute;
+    top: -11px; */
+}
+
+.todayGridList {
+    height: 100%;
+    width: 100%;
+    max-height: 290px;
+    display: grid;
+    grid-template-columns: repeat(2, 0.6fr);
+    /* Four items per row */
+    gap: 10px;
+    /* Adjust the gap as needed */
+    overflow-y: auto;
+    /* border: 1px solid var(--Color11); */
+    /* border-radius:8px; */
+    margin-left: 12px;
+    }
+
+.todayGridList::-webkit-scrollbar {
+    width: 4px;
+}
+
+.todayGridList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.todayGridList::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.todayGridList::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.allListContainer {
+    display: flex;
+    flex: 0.8;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    padding: 1%;
+    gap: 10px;
+    overflow-y: scroll;
+}
+.allListContainer::-webkit-scrollbar {
+    width: 4px;
+}
+
+.allListContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.allListContainer::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.allListContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.newClinicFromModalWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    outline: none;
+    background-color: var(--modelContainerWrapperBackGroundColor);
+}
+
+.clinicFromContainer {
+    height: auto;
+    width: 34%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    /* border: 2px solid red; */
+    background-color: var(--secondaryColor);
+    border-radius: 6px;
+    padding: 10px 0px 10px 0px;
+    /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+}
+
+.emailInputBoxWrapper {
+    /* border-bottom: 1px solid royalblue; */
+    height: 90px;
+    width: 100%;
+    /* margin: 0px auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inputBlock {
+    width: 100%;
+    height: 46%;
+}
+
+.errorBlock {
+    color: var(--blockedRedColor);
+    margin-top: 8px;
+}
+
+.OtpContainerWrapper {
+    display: flex;
+    flex: 1.3;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.sendOtpBlock {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.submitButton {
+    height: 28%;
+    width: 100%;
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+    border: none;
+    text-align: center;
+    padding: 6px 0px;
+    margin: 0px auto;
+    border-radius: 10px;
+    /* justify-content: center; */
+}
+
+.OtpInnerContainerWrapper {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.otpBlock {
+    height: 10%;
+    width: 100%;
+    color: var(--Color3);
+    margin: 0px;
+}
+
+.reSendOtpBlock {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    cursor: pointer;
+
+}
+
+.reSendOtpTitle {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    color: var(--Color3);
+    font-size: 2px;
+    text-align: right;
+    text-decoration-line: underline;
+}
+
+.otpInputBlock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.react-datepicker__input-container input {
+    border: none;
+    outline: none;
+    
+}

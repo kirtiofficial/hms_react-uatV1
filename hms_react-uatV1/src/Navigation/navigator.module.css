@@ -1,0 +1,8 @@
+.innerContainer{
+    flex:10;
+    background-color: transparent;
+      display:flex;
+      flex-direction:column;
+      overflow-y: auto;
+      max-height: calc(100vh - 70px);
+}

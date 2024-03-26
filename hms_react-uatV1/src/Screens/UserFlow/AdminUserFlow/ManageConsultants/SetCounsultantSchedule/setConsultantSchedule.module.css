@@ -1,0 +1,154 @@
+@import '../../../../../Constants/ColorConstant.module.css';
+
+
+.dayCircleUnselected {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--Color15);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dayCircleSelected {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--primaryColor);
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.displayNameUnselected {
+  margin: 0;
+  color: var(--Color22);
+  font-weight: 500;
+}
+
+.displayNameSelected {
+  margin: 0;
+  color: var(--secondaryColor);
+  font-weight: 500;
+
+}
+
+.scheduleFromModalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  outline: none;
+  background-color: var(--modelContainerWrapperBackGroundColor);
+
+}
+
+.scheduleFromModalContainer {
+  height: 90%;
+  width: 30%;
+  /* border: 2px solid red; */
+  position: relative;
+  margin: auto;
+  background-color: var(--secondaryColor);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+
+}
+
+.ConfirmationButton {
+  margin: 0px 5px;
+  border: 2px solid var(--primaryColor);
+  border-radius: 5px;
+  padding: 6px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+div.scrollablecontainer {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  /* For Firefox */
+  padding: 5px;
+
+}
+
+.scrollablecontainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollablecontainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scrollablecontainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.scrollablecontainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+div.scrollablecontainer::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primaryColor);
+  /* Hover color */
+
+}
+
+
+/* div.ScheduleContaner::-webkit-scrollbar {
+  width: 8px;
+  border: 1px solid var(--primaryColor);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+div.ScheduleContaner::-webkit-scrollbar-track {
+  background-color: var(--Color17);
+  width: 8px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+div.ScheduleContaner::-webkit-scrollbar-thumb {
+  background-color: var(--Color8);
+  border-radius: 20px;
+}
+
+div.ScheduleContaner::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primaryColor);
+}
+.tableContainer{
+  width: 98%;
+  display: flex;
+  justify-content: right;
+  height: 380px;
+  overflow-y: auto;
+  align-items: flex-start;
+} */
+.ScheduleContaner::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ScheduleContaner::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.ScheduleContaner::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.ScheduleContaner::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

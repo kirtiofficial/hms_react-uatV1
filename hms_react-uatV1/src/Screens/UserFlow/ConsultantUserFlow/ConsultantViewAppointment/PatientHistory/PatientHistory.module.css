@@ -1,0 +1,306 @@
+p {
+    margin: 0px;
+}
+
+.PatientHistoryContainer {
+    /* background-color:; */
+    height: 84vh;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftContainer {
+    /* background-color:grey; */
+    width: 70%;
+    height: 98%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rightContainer {
+    background-color: white;
+    margin-top: 6px;
+    width: 30%;
+    height: 96.4%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.patientContainer {
+    height: 20%;
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.PrescriptionContainer {
+    height: 76%;
+    width: 98%;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.patientImageContainer {
+    height: 100%;
+    width: 16%;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.patientDetailContainer {
+    height: 100%;
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #fff;
+}
+
+.patientPrescriptionContainer {
+    width: auto;
+    height: 80%;
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.patientNameContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.patientContactContainer {
+    width: 100%;
+    display: flex;
+    /* justify-content: ; */
+    /* align-items: start; */
+    flex-direction: row;
+    padding: 2px 0px;
+}
+
+.patientBasicDetailContainer {
+    width: 96%;
+    height: 24%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.PrescriptionContainerHeader {
+    height: 13%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #E5EDF9;
+}
+
+.docPrescreptionHistory {
+    height: 86%;
+    width: 97%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    padding-right: 3%;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.docProblemHistory {
+    height: 82%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 8px;
+    padding: 2%;
+}
+
+.docReportHistory {
+    height: 86%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.docProblemHistory::-webkit-scrollbar {
+    width: 4px;
+    /* margin-left: -40px; */
+}
+
+.docProblemHistory::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.docProblemHistory::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.docProblemHistory::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.historyContainerGrid {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.historyContainer {
+    height: 24px;
+    width: 96%;
+    padding: 1px;
+    border: 1px solid var(--Color11);
+    /* text-align: center; */
+    background-color: #E7F1FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid #E5EDF9;
+}
+
+.historyContainerGrid::-webkit-scrollbar {
+    width: 1px;
+    /* margin-left: -40px; */
+}
+
+.historyContainerGrid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.historyContainerGrid::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.historyContainerGrid::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.prescriptionModalWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    outline: none;
+}
+
+.PrescriptionModalContainer {
+    max-height: 90vh;
+    width: 60%;
+    padding: 10px;
+    background-color: var(--secondaryColor);
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+    overflow-y: scroll;
+}
+
+.addCityBtn {
+    background-color: var(--primaryColor);
+    padding: 6px;
+    color: var(--secondaryColor);
+    width: auto;
+    outline: "none";
+    border: 0.5px solid var(--primaryColor);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.medicationContainer {
+    width: 98%;
+    max-height: 280px;
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.medicationContainer,
+.PrescriptionModalContainer::-webkit-scrollbar {
+    width: 1px;
+    /* margin-left: -40px; */
+}
+
+.medicationContainer,
+.PrescriptionModalContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.medicationContainer,
+.PrescriptionModalContainer::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.medicationContainer,
+.PrescriptionModalContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.Line {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.prescriptionTextArea {
+    margin: 2px 0px;
+    width: 98%;
+    height: 16px;
+    outline: none;
+    border: 1px solid #B2B2B2;
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+    padding: 6px 6px;
+}
+.prescriptionTextArea:focus {
+    border: 1px solid #1ABDC4;
+}
+
+.prescriptionTextArea::placeholder {
+    color: #979797;
+    font-family: 'Inter', sans-serif;
+}

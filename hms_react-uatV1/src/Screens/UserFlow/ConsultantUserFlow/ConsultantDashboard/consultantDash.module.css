@@ -1,0 +1,292 @@
+.adminDashContainer {
+    background-color: var(--Color16);
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.adminDashHeader {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.6px solid brown; */
+}
+
+.headerTitle {
+    /* background-color: pink; */
+    width: 38%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.headerNameContainer {
+    /* background-color: var(--secondaryColor); */
+    width: 58%;
+    height: 90%;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    padding-right: 1%;
+}
+
+.notifiContainer {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.userNameContainer {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logoutContainer {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
+
+.adminContentBox {
+    width: 96%;
+    height: 100%;
+    /* border: 0.4px solid; */
+    /* margin: 0 auto; */
+    display: flex;
+    /* flex-direction: row; */
+    /* gap: 30px; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: solid; */
+}
+
+.gridItem {
+    height: 110px;
+    background-color: var(--secondaryColor);
+    width: 230px;
+    padding: 6px;
+    font-size: 18px;
+    color: var(--Color5);
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 5px;
+    box-shadow: 0px 0px 16px 5px rgba(197, 195, 195, 0.564);
+    text-decoration: none;
+    border: none;
+    flex-direction: column;
+    /* transition: outline 0.1s ease; */
+    outline: none;
+}
+
+.gridItem:hover {
+    outline: 2px solid var(--primaryColor);
+}
+
+.cardText {
+    height: 100%;
+    margin: 0%;
+    padding: 5px 0px 0px 20px;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+
+}
+
+.cardCount {
+    height: 100%;
+    margin: 0%;
+    padding: 5px 0px 0px 5px;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.leftContainer {
+    height: 100%;
+    width: 63%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rightContainer {
+    height: 100%;
+    width: 36%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.patientListContainer {
+    height: 400px;
+    width: 100%;
+    /* border: solid; */
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: white;
+}
+
+.headercontainer {
+    height: 120px;
+    width: 100%;
+    border-radius: 6px;
+    background-image: url('../../../../Images/fdmDashHeadBg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.patientlistGridContainer {
+    height: 325px;
+    width: 96%;
+    /* border: solid yellow; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.patientlistGridContainer::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* / Track / */
+.patientlistGridContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* / Handle / */
+.patientlistGridContainer::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+/* / Handle on hover / */
+.patientlistGridContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.rightpatientListBox {
+    width: 100%;
+    height: 330px;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+.rightpatientListBox::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* / Track / */
+.rightpatientListBox::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* / Handle / */
+.rightpatientListBox::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+/* / Handle on hover / */
+.rightpatientListBox::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.newClinicFromModalWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    outline: none;
+    background-color: var(--modelContainerWrapperBackGroundColor);
+}
+
+.OneLine {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.newClinicFromModalWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    outline: none;
+    background-color: var(--modelContainerWrapperBackGroundColor);
+  }
+  
+  .ConfirmationModalContainer {
+    height: 48%;
+    width: 48%;
+    /* padding: 2% ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+  }
+  .tryBox {
+    height: 92%;
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    /* border: solid; */
+    align-self: center;
+    /* margin-left: 25px; */
+  }
+  
+  .tryBoxContainer {
+    height: 80%;
+    width: 78%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 30%;  */
+    padding: 4px; 
+    border-radius: 3px;
+    border: 1px solid var(--primaryColor);
+  }
+  

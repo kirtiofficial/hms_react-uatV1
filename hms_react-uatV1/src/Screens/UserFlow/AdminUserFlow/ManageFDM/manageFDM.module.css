@@ -1,0 +1,171 @@
+.gridTable {
+  border-collapse: collapse;
+  width: 98%;
+  /* Adjust the width as needed */
+  background-color: var(--secondaryColor);
+}
+
+.gridTable th,
+.gridTable td {
+  /* border-top: 1px solid var(--Color12); */
+  padding: 8px;
+  /* Adjust the padding as needed */
+  text-align: left;
+  /* Adjust the text alignment as needed */
+  font-size: 14px;
+}
+
+.gridTable th {
+  border-top: 1px solid #EAECF0;
+  border-bottom: 1px solid #1ABDC4;
+  color: var(--Color3);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.previousNextButton {
+  background-color: var(--secondaryColor);
+  padding: 5px;
+  color: var(--Color3);
+  width: 24px;
+  outline: "none";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 5px;
+  font-size: 12px;
+}
+
+
+.addCityBtn {
+  background-color: var(--primaryColor);
+  padding: 6px;
+  color: var(--secondaryColor);
+  width: 100px;
+  outline: "none";
+  border: none;
+  border-radius: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.previousNextButton:disabled {
+  color: var(--Color15);
+  background-color: var(--Color13);
+}
+
+.newClinicFromModalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  outline: none;
+  background-color: var(--modelContainerWrapperBackGroundColor);
+}
+
+.clinicFromContainer {
+  /* height: 65%; */
+  width: 40%;
+  /* border: 2px solid red; */
+  background-color: var(--secondaryColor);
+  border-radius: 6px;
+  padding: 15px;
+  /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.managePrevNextPageWrapper {
+  width: 98%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+
+.AcceptRejctButton {
+  margin: 0px 5px;
+  color: var(--secondaryColor);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.ConfirmationModalContainer {
+  height: 26%;
+  width: 30%;
+  /* padding: 2% ; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: var(--secondaryColor);
+  border-radius: 5px;
+}
+
+.ConfirmationButton {
+  margin: 0px 5px;
+  color: var(--secondaryColor);
+  border: none;
+  /* border-radius: 5px; */
+  padding: 6px 24px;
+}
+
+.mobTitleStyle {
+  margin: 0px;
+  font-size: 14px;
+  padding: 0px 0px 5px;
+  color: var(--Color3);
+  font-weight: 500;
+}
+
+.resetBtn {
+  border: 1px solid var(--primaryColor);
+  background-color: var(--secondaryColor);
+  padding: 6px;
+  color: var(--primaryColor);
+  width: 100px;
+  outline: "none";
+  /* border: none; */
+  border-radius: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.even {
+  background-color: white;
+}
+
+.odd {
+  background-color: #CEFDFF;
+}
+
+.tableContainer {
+  width: 98%;
+  display: flex;
+  justify-content: right;
+  height: 56vh;
+  overflow-y: auto;
+  align-items: flex-start;
+}
+
+.tableContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

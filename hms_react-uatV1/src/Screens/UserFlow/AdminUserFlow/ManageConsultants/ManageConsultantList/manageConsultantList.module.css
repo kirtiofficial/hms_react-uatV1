@@ -1,0 +1,193 @@
+.gridTable {
+  border-collapse: collapse;
+  width: 98%;
+  /* Adjust the width as needed */
+  background-color: var(--secondaryColor);
+}
+
+.gridTable th,
+.gridTable td {
+  border-top: 0px solid rgb(171, 163, 163);
+  border-bottom: 0px solid rgb(171, 163, 163);
+  /*Change the color and thickness as needed */
+  padding: 8px;
+  /* Adjust the padding as needed */
+  text-align: left;
+  /* Adjust the text alignment as needed */
+  font-size: 14px;
+}
+
+.gridTable th {
+  /* background-color: var(--Color20); */
+  /* color: var(--secondaryColor); */
+  border-top: 1px solid #EAECF0;
+  border-bottom: 1px solid #1ABDC4;
+  color: var(--Color3);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.previousNextButton {
+  background-color: var(--secondaryColor);
+  padding: 5px;
+  color: var(--Color3);
+  width: 24px;
+  outline: "none";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 5px;
+  font-size: 12px;
+}
+
+.addCityBtn {
+  background-color: var(--primaryColor);
+  padding: 6px;
+  color: var(--secondaryColor);
+  width: 200px;
+  outline: "none";
+  border: 0.5px solid var(--primaryColor);
+  border-radius: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.previousNextButton:disabled {
+  color: var(--Color15);
+  background-color: var(--Color13);
+}
+
+.newClinicFromModalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  outline: none;
+  background-color: var(--modelContainerWrapperBackGroundColor);
+}
+
+.clinicFromContainer {
+  height: 92%;
+  width: 96%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  background-color: var(--secondaryColor);
+  border-radius: 16px;
+  /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+}
+
+.managePrevNextPageWrapper {
+  width: 98%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.AcceptRejctButton {
+  margin: 0px 5px;
+  color: var(--secondaryColor);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.ConfirmationModalContainer {
+  height: 26%;
+  width: 30%;
+  /* padding: 2% ; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: var(--secondaryColor);
+  border-radius: 5px;
+  /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+}
+
+.ConfirmationButton {
+  margin: 0px 5px;
+  color: var(--secondaryColor);
+  border: none;
+  /* border-radius: 5px; */
+  padding: 6px 24px;
+}
+
+.ScheduleModelWrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--modelContainerWrapperBackGroundColor);
+}
+
+.button {
+  padding: 5px 10px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--primaryColor);
+  border-radius: 5px
+}
+
+.mobTitleStyle {
+  margin: 0px;
+  font-size: 14px;
+  padding: 0px 0px 5px;
+  color: var(--Color3);
+  font-weight: 500;
+}
+
+.even {
+  background-color: white;
+}
+
+.odd {
+  background-color: #CEFDFF;
+}
+
+.ConfirmationButton {
+  margin: 0px 5px;
+  color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+  border-radius: 5px;
+  padding: 6px 24px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: 'pointer';
+}
+
+.tableContainer {
+  width: 98%;
+  display: flex;
+  justify-content: right;
+  height: 56vh;
+  overflow-y: auto;
+  align-items: flex-start;
+}
+
+.tableContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

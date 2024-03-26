@@ -1,0 +1,370 @@
+.gridTable {
+  border-collapse: collapse;
+  width: 98%;
+  /* Adjust the width as needed */
+  background-color: var(--secondaryColor);
+}
+
+.gridTable th,
+.gridTable td {
+  border-top: 1px solid rgb(171, 163, 163);
+  border-bottom: 1px solid rgb(171, 163, 163);
+  /*Change the color and thickness as needed */
+  padding: 8px;
+  /* Adjust the padding as needed */
+  text-align: left;
+  /* Adjust the text alignment as needed */
+}
+
+.gridTable th {
+  /* background-color: var(--Color20); */
+  /* color: var(--secondaryColor); */
+  color: var(--Color3);
+
+}
+
+.previousNextButton {
+  background-color: var(--primaryColor);
+  padding: 5px;
+  color: var(--secondaryColor);
+  width: 50px;
+  outline: "none";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 5px;
+
+
+}
+
+.addCityBtn {
+  background-color: var(--primaryColor);
+  padding: 6px;
+  color: var(--secondaryColor);
+  width: 140px;
+  outline: "none";
+  border: 0.5px solid var(--primaryColor);
+  border-radius: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.previousNextButton:disabled {
+  color: var(--Color13);
+  background-color: var(--primaryColor);
+}
+
+
+.clinicFromContainer {
+  height: 70%;
+  width: 46%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  background-color: var(--secondaryColor);
+  border-radius: 16px;
+  padding: 10px 0px 10px 0px;
+  /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+}
+
+.managePrevNextPageWrapper {
+  width: 98%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.AcceptRejctButton {
+  margin: 0px 5px;
+  color: var(--secondaryColor);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.ConfirmationButton {
+  margin: 0px 5px;
+  color: var(--secondaryColor);
+  border: none;
+  /* border-radius: 5px; */
+  padding: 10px 24px;
+}
+
+.ScheduleModelWrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--modelContainerWrapperBackGroundColor);
+}
+
+.button {
+  padding: 5px 10px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--primaryColor);
+  border-radius: 5px
+}
+
+.timeSlotsContainer {
+  height: auto;
+  width: 100%;
+  max-height: 240px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Four items per row */
+  gap: 10px;
+  /* Adjust the gap as needed */
+  overflow-y: auto;
+  /* border: 1px solid var(--Color11); */
+  /* border-radius:8px; */
+  /* margin: 5px; */
+}
+
+.timeSlotsContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.timeSlotsContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.timeSlotsContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.timeSlotsContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.timeSlot {
+  height: 32px;
+  margin: 3px 3px;
+  padding: 8px;
+  /* border: 1px solid var(--Color11); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #F3F2F5; */
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Inter', sans-serif;
+  align-self: center;
+border: solid;
+}
+
+
+.calenderStyle {
+  height: 100%;
+  width: 10%;
+  /* font-family: Arial, sans-serif; */
+  font-family: 'Inter', sans-serif;
+  padding: 2px;
+  border: none;
+  outline: none;
+  overflow: auto;
+}
+
+
+.tileStyle {
+  background-color: red
+}
+
+.slotForModalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  outline: none;
+  background-color: var(--modelContainerWrapperBackGroundColor);
+}
+
+.slotForContainer {
+  height: 34%;
+  width: 34%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* / border: 2px solid red; / */
+  background-color: var(--secondaryColor);
+  border-radius: 16px;
+  padding: 10px 0px 10px 0px;
+  /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+}
+
+.addBenificeryModalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  outline: none;
+  background-color: var(--modelContainerWrapperBackGroundColor);
+}
+
+.addBenificeryFromContainer {
+  height: 44%;
+  width: 44%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  /* / border: 2px solid red; / */
+  background-color: var(--secondaryColor);
+  border-radius: 6px;
+  padding: 10px 0px 10px 0px;
+}
+
+.blookSlotContainer {
+  height: 77%;
+  width: 84%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  background-color: var(--secondaryColor);
+  /* border-radius: 16px; */
+  padding: 10px 0px 10px 0px;
+
+}
+
+.bookSlotInsideContainer {
+  height: 80%;
+  width: 90%;
+  overflow: hidden;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  box-shadow: rgba(17, 17, 26, 0.225) 0px 0px 16px;
+  /* overflow-y: scroll   ; */
+}
+
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: white;
+  /* border: 1px solid #a0a096; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Inter', sans-serif;
+  line-height: 1.125em;
+}
+
+.bookSlotInsideContainerNoData {
+  height: 80%;
+  width: 90%;
+  overflow: hidden;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  box-shadow: rgba(17, 17, 26, 0.225) 0px 0px 16px;
+}
+
+.even {
+  background-color: white;
+}
+
+.odd {
+  background-color: #CEFDFF;
+}
+
+
+.newClinicFromModalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  outline: none;
+  background-color: var(--modelContainerWrapperBackGroundColor);
+}
+
+.ConfirmationModalContainer {
+  height: 48%;
+  width: 48%;
+  /* padding: 2% ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--secondaryColor);
+  border-radius: 5px;
+  /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+}
+
+.ConfirmationButton {
+  width: 80px;
+  margin: 0px 5px;
+  color: var(--secondaryColor);
+  border: none;
+  /* border-radius: 5px; */
+  padding: 10px 24px;
+}
+
+.tryBox {
+  height: 92%;
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  /* border: solid; */
+  align-self: center;
+  /* margin-left: 25px; */
+}
+
+.tryBoxContainer {
+  height: 80%;
+  width: 78%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 30%;  */
+  padding: 4px; 
+  border-radius: 3px;
+  border: 1px solid var(--primaryColor);
+}
+
+.BookAppointment {
+  margin-top: 10px;
+  border: 1px solid #1ABDC4;
+  color: #1ABDC4;
+  width: 100%;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+
+}
+
+.BookAppointment:hover {
+  background-color: #1ABDC4;
+  color: #fff;
+}
+
+.Line {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

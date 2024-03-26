@@ -1,0 +1,17 @@
+.menuIconsWrapper{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+}
+.cardWrapper{
+    display: flex;
+    align-items:center;
+    margin:5px 0px;
+    cursor: pointer;    
+}
+.menuStyle{
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400
+}

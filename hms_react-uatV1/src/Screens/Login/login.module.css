@@ -1,0 +1,280 @@
+@import '../../Constants/ColorConstant.module.css';
+
+
+.outerWrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  /* background:linear-gradient(90deg, var(--Color10), #688fe4);; */
+  background-color: #64acbc;
+  background-image: url('../../Images/docLog2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loginCardContainer {
+  width: 28%;
+  height: 68%;
+  border-radius: 20px;
+  background-color: var(--secondaryColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-right: 6%;
+}
+
+.loginCardContainerInnerDiv {
+  height: 95%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.loginImageContainer {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logoBlock {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.logoImg {
+  height: 60px;
+  /* height: 70%; */
+  /* width: 70%; */
+}
+
+.loginHeadingBlock {
+  width: 94%;
+  height: 10%;
+  display: flex;
+  /* flex: 1; */
+  align-items: flex-start;
+  font-size: 18px;
+  flex-direction: column;
+}
+.loginOtpHeadingBlock {
+  width: 94%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  flex-direction: column;
+}
+
+.loginTitle {
+  /* font-family: 'Aclonica', sans-serif; */
+  font-family: 'Inter', sans-serif;
+margin: 0px;
+}
+
+/* .headerBlock {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+} */
+
+.headerBlockTitle {
+  font-size: 20px;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Inter', sans-serif;
+
+}
+
+.loginImageBlock {
+  height: 80%;
+  width: 80%;
+}
+
+.emailInputBoxWrapperBlock {
+  display: flex;
+  flex: 1
+}
+
+.emailInputBoxWrapper {
+  height: 36%;
+  width: 100%;
+  /* margin: 0px auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* .emailInputBox {
+  width: 40%;
+  background-color: tan;
+  border: solid;
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  color:black;
+
+} */
+
+.emailInputBox::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: grey;
+  font-size: small;
+  opacity: 1;
+  /* padding: 2%; */
+  /* Firefox */
+}
+
+.emailInputBox {
+  width: 98%;
+  background-color: var(--Color7);
+  border: 1px solid var(--Color8);
+  height: 50%;
+  font-size: 16px;
+  color: var(--Color3);
+  border-radius: 6px;
+}
+
+.mobileInputHeading {
+  margin: 0px;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Inter', sans-serif;
+
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.inputBlock {
+  width: 100%;
+  height: 36px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.errorBlock {
+  color: var(--blockedRedColor);
+  margin-top: 8px;
+}
+
+.OtpContainerWrapper {
+  height: 18%;
+  width: 100%;
+  border-top: 0.6px solid #eaecf0;
+}
+
+.sendOtpBlock {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.OtpInnerContainerWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.otpBlock {
+  width: 100%;
+  color: var(--Color3);
+  margin: 0px;
+  margin-bottom: 12px;
+  font-size: 13px;
+
+}
+
+.submitButton {
+  height: 28%;
+  width: 100%;
+  color: var(--secondaryColor);
+  background-color: var(--primaryColor);
+  border: none;
+  text-align: center;
+  padding: 5px 0px;
+  margin: 0px auto;
+  border-radius: 10px;
+  /* justify-content: center; */
+}
+
+.reSendOtpBlock {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: right;
+}
+
+.reSendOtpTitle {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  color: var(--Color3);
+  font-size: 12px;
+  text-align: right;
+}
+
+.otpInputBlock {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginCardBottomContainer {
+  height: 42%;
+  width: 94%;
+  display: flex;
+  /* flex: 3; */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 479px) {
+
+  /* Custom CSS rules for screens narrower than 480px */
+  .loginCardContainer {
+    width: 90%;
+    height: 80%;
+
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+  /* CSS rules for small screens */
+  .loginCardContainer {
+    width: 80%;
+    height: 80%;
+
+
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* CSS rules for medium screens */
+}
+
+@media screen and (min-width: 1025px) {}

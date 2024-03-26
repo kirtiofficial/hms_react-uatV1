@@ -1,0 +1,48 @@
+@import '../../Constants/ColorConstant.module.css';
+
+
+.inputBoxWrapper{
+    /* border: 1px solid red;  */
+    width: 100%;
+}
+.titleStyle{
+    margin: 0px;
+    font-size:14px;
+    padding: 0px 0px 5px;
+    color: var(--Color3);
+    font-weight: 500;
+}
+.inputBoxContainer{
+    border: 1px solid var(--Color6);
+    border-radius: 5px;
+}
+.inputBox{
+    width: 90%;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+.errormsgStyle{
+    color: var(--blockedRedColor);
+    margin: 0px;
+    font-size: 12px;
+
+}
+.bottomBoxWrapper{
+    display: flex;
+    flex-direction: row;
+}
+.selectorContainer{
+    flex: 4;
+    margin: 0px;
+    padding: 5px;
+}
+.selectorLable{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .loaderstyle{ */
+    /* width: 20%; */
+/* } */

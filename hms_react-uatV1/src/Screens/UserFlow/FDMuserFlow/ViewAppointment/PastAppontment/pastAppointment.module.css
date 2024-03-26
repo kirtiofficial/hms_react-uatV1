@@ -1,0 +1,189 @@
+.gridTable {
+  border-collapse: collapse;
+  width: 98%;
+  background-color: var(--secondaryColor);
+}
+
+.gridTable th,
+.gridTable td {
+  border-top: 1px solid var(--Color12);
+  border-bottom: 1px solid var(--Color12);
+  padding: 8px;
+  text-align: left;
+}
+
+.gridTable th {
+  font-size: 13px;
+  color: var(--Color3);
+}
+
+.previousNextButton {
+  background-color: var(--primaryColor);
+  padding: 5px;
+  color: var(--secondaryColor);
+  width: 50px;
+  outline: "none";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 5px;
+
+
+}
+
+.addCityBtn {
+  background-color: var(--primaryColor);
+  padding: 10px;
+  color: var(--secondaryColor);
+  width: 200px;
+  outline: "none";
+  border: 0.5px solid var(--primaryColor);
+  border-radius: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.previousNextButton:disabled {
+  color: var(--Color13);
+  background-color: var(--primaryColor);
+}
+
+.newClinicFromModalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  outline: none;
+}
+
+.clinicFromContainer {
+  height: 90%;
+  width: 50%;
+  background-color: var(--secondaryColor);
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+
+}
+
+.isInsuredContainer {
+  height: 40%;
+  width: 30%;
+  background-color: var(--secondaryColor);
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+
+}
+
+.managePrevNextPageWrapper {
+  width: 98%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.AcceptRejctButton {
+  margin: 0px 5px;
+  color: var(--secondaryColor);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+
+}
+
+.closeModal {
+  margin: 0px;
+  color: var(--Color10);
+  padding: 20px 20px 0px 0px;
+  cursor: pointer;
+}
+
+.headerContainer {
+  width: 96%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2%;
+  background-color: var(--secondaryColor);
+}
+
+.inSideHeader {
+  width: 33%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerBarTitle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: relative;
+}
+
+.rightHeaderBlock {
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.searchInputBlock {
+  height: 30px;
+  display: flex;
+  justify-content: left;
+  width: 300px;
+  border-radius: 5px;
+  margin-right: 20px;
+  background-color: var(--Color17);
+}
+
+.searchInputContainer {
+  outline: none;
+  border: none;
+  background-color: var(--Color17);
+  color: var(--Color3);
+}
+
+.modalCloseContainer {
+  display: flex;
+  justify-content: end;
+}
+
+.inSidemodalCloseContainer {
+  text-align: center;
+  margin: 0px 0px 20px;
+}
+
+.modalBottomdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insideModalBottomdiv {
+  display: flex;
+  width: 70%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalImageContainer {
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+}
+
+.modalConfirmBlock {
+  color: var(--Color10);
+  font-size: 20px;
+}

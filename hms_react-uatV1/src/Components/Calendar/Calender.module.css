@@ -1,0 +1,10 @@
+.contaner {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.contaner::-webkit-scrollbar {
+    display: none;
+}

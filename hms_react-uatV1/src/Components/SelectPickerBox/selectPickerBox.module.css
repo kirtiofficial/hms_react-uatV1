@@ -1,0 +1,72 @@
+@import '../../Constants/ColorConstant.module.css';
+
+
+
+
+.inputBoxWrapper {
+    width: 100%;
+}
+
+.titleStyle {
+    margin: 0px;
+    font-size: 13px;
+    padding: 0px 0px 5px;
+    color: var(--Color3);
+    font-weight: 500;
+}
+
+.inputBoxContainer {
+    /* border: 1px solid var(--primaryColor);
+    border-radius: 4px;
+    background-color: #fff; */
+}
+
+.inputselector {
+    width: 99%;
+    padding: 6px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #66708580;
+    font-family: 'Inter', sans-serif;
+}
+
+.inputselector:focus {
+    border: 1px solid var(--primaryColor);
+}
+
+.errormsgStyle {
+    color: var(--blockedRedColor);
+    margin: 0px;
+    font-size: 12px;
+
+}
+
+/* .loaderstyle {
+    width: 20%;
+} */
+
+.optionStyles {
+    width: 100%;
+    color: #979797;
+    background-color: palegoldenrod;
+}
+
+.inputselector::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* / Track  */
+.inputselector::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* / Handle / */
+.inputselector::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+/* / Handle on hover / */
+.inputselector::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

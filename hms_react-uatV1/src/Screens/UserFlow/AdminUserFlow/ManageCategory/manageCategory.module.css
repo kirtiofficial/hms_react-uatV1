@@ -1,0 +1,326 @@
+@import '../../../../Constants/ColorConstant.module.css';
+
+
+
+.gridTable {
+  border-collapse: collapse;
+  width: 98%;
+  /* Adjust the width as needed */
+  background-color: var(--secondaryColor);
+}
+
+.gridTable th,
+.gridTable td {
+  /* border-top: 1px solid rgb(171, 163, 163); */
+  padding: 8px;
+  /* Adjust the padding as needed */
+  text-align: left;
+  /* Adjust the text alignment as needed */
+  font-size: 14px;
+}
+
+.gridTable th {
+  border-top: 1px solid #EAECF0;
+  border-bottom: 1px solid #1ABDC4;
+  color: var(--Color3);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.previousNextButton {
+  background-color: var(--secondaryColor);
+  padding: 5px;
+  color: var(--Color3);
+  width: 24px;
+  outline: "none";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 5px;
+  font-size: 12px;
+}
+
+
+.addCityBtn {
+  background-color: var(--primaryColor);
+  padding: 8px;
+  color: var(--secondaryColor);
+  width: 200px;
+  outline: "none";
+  border: none;
+  border-radius: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.previousNextButton:disabled {
+  color: var(--Color15);
+  background-color: var(--Color13);
+}
+
+.newClinicFromModalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  outline: none;
+  background-color: var(--modelContainerWrapperBackGroundColor);
+}
+
+.clinicFromContainer {
+  height: 26%;
+  width: 40%;
+  /* border: 2px solid red; */
+  background-color: var(--secondaryColor);
+  border-radius: 6px;
+  /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.managePrevNextPageWrapper {
+  width: 98%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.AcceptRejctButton {
+  margin: 0px 5px;
+  color: var(--secondaryColor);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.ConfirmationModalContainer {
+  height: 26%;
+  width: 30%;
+  /* padding: 2% ; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: var(--secondaryColor);
+  border-radius: 5px;
+  /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+}
+
+.ConfirmationButton {
+  margin: 0px 5px;
+  color: var(--secondaryColor);
+  border: none;
+  /* border-radius: 5px; */
+  padding: 10px 24px;
+}
+
+.addCategory {
+  background-color: var(--primaryColor);
+  padding: 6px;
+  color: var(--secondaryColor);
+  width: 100px;
+  outline: "none";
+  border: none;
+  border-radius: 3px;
+  /* margin: 0px 5px; */
+  cursor: pointer;
+}
+
+.addCategoryModal {
+  height: 26%;
+  width: 30%;
+  /* border: 2px solid red; */
+  background-color: var(--secondaryColor);
+  border-radius: 6px;
+  /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.even {
+  background-color: white;
+}
+
+.odd {
+  background-color: #CEFDFF;
+}
+
+.tableContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 420px;
+  align-items: center;
+  /* align-self: center; */
+  /* padding: 0px 2px; */
+}
+
+.tableContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tryBox {
+  height: 92%;
+  width: 98%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  /* border: solid; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  align-self: center;
+  /* margin-left: 25px; */
+}
+
+.tryBoxContainer {
+  height: 90%;
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 4px;  */
+  border-radius: 3px;
+  flex-direction: column;
+  /* border: 1px solid var(--primaryColor); */
+  background-color: var(--secondaryColor);
+  /* background-color: #E4F8F9; */
+}
+
+.tryBox::-webkit-scrollbar {
+  width: 4px;
+}
+
+.tryBox::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.tryBox::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.tryBox::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.iconWrapper {
+  width: 96%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.iconContainer {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #E4F8F9;
+}
+
+.tryBoxContainer:hover {
+  cursor: pointer;
+  padding: 4px;
+  box-shadow: rgba(0, 0, 0, 0.182) 0px 4px 25px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.cardImgContainerOne{
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-color: #CAF9FB;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.cardImgContainer {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-color: #CAF9FB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardTitle {
+  width: 77%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgWrapper {
+  width: 20%;
+  height: 74%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tryBoxContainer:hover .cardImgContainerOne {
+  display: flex;
+}
+.tryBoxContainer:hover .imgWrapper {
+  display: none;
+  width: 0%;
+}
+
+.tryBoxContainer:hover .cardTitle {
+  width: 100%;
+}
+
+.tryBoxContainer:hover .iconContainer {
+  display: flex;
+}
+
+.editIcon {
+  display: none;
+}
+
+.editIconTwo {
+  display: flex;
+}
+
+.iconContainer:hover {
+  cursor: pointer;
+  background-color: var(--primaryColor);
+  display: flex;
+}
+
+.iconContainer:hover .editIcon {
+  display: flex;
+  cursor: pointer;
+}
+
+.iconContainer:hover .editIconTwo {
+  display: none;
+  cursor: pointer;
+}

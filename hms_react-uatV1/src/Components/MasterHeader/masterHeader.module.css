@@ -1,0 +1,131 @@
+@import '../../Constants/ColorConstant.module.css';
+
+
+
+.masterHeaderWrapper {
+    background-color: "var(--secondaryColor)";
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(168, 168, 168, 1);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(168, 168, 168, 1);
+    box-shadow: 0px 3px 6px 0px rgba(168, 168, 168, 1);
+    z-index: 1000000;
+    /* margin-bottom: 20px; */
+    /* border: solid; */
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.logoStyle {
+    height: 50px;
+    cursor: pointer;
+}
+
+.rightHeaderWrapper {
+    display: flex;
+}
+
+.icon {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.nameWrapper {
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatarWrapper {
+    margin: 0px 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: var(--primaryColor);
+}
+
+.profilePic {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%
+}
+
+.count {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: var(--secondaryColor);
+}
+
+.projectTitle {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #170F49;
+}
+
+.newClinicFromModalWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    outline: none;
+    background-color: var(--modelContainerWrapperBackGroundColor);
+}
+
+.ConfirmationModalContainer {
+    height: 40%;
+    width: 40%;
+    /* padding: 2% ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondaryColor);
+    border-radius: 3px;
+    /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+}
+
+.tryBox {
+    height: 100%;
+    width: 94%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    /* border: solid; */
+    align-self: center;
+    /* margin-left: 25px; */
+}
+
+.tryBoxContainer {
+    height: 60px;
+    width: 77%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 30%;  */
+    /* padding: 2px;  */
+    border: 1px solid var(--primaryColor);
+}

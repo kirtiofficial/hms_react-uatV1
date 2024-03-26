@@ -1,0 +1,303 @@
+.gridTable {
+  border-collapse: collapse;
+  width: 98%;
+  /* Adjust the width as needed */
+  background-color: var(--secondaryColor);
+}
+
+.gridTable th,
+.gridTable td {
+  /* border-top: 1px solid rgb(171, 163, 163); */
+  /* border-bottom: 1px solid rgb(171, 163, 163); */
+  /*Change the color and thickness as needed */
+  padding: 8px;
+  /* Adjust the padding as needed */
+  text-align: left;
+  /* Adjust the text alignment as needed */
+  font-size: 14px;
+}
+
+.gridTable th {
+  /* background-color: var(--Color20); */
+  /* color: var(--secondaryColor); */
+  border-top: 1px solid rgb(171, 163, 163);
+  border-bottom: 1px solid #1ABDC4;
+  color: var(--Color3);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.previousNextButton {
+  background-color: var(--secondaryColor);
+  padding: 5px;
+  color: var(--Color3);
+  width: 24px;
+  outline: "none";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px 5px;
+  font-size: 12px;
+}
+
+
+
+.addCityBtn {
+  background-color: var(--primaryColor);
+  padding: 6px;
+  color: var(--secondaryColor);
+  width: 200px;
+  outline: "none";
+  border: 0.5px solid var(--primaryColor);
+  border-radius: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.previousNextButton:disabled {
+  color: var(--Color15);
+  background-color: var(--Color13);
+}
+
+.newClinicFromModalWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  outline: none;
+  background-color: var(--modelContainerWrapperBackGroundColor);
+}
+
+.clinicFromContainer {
+  height: 52%;
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  background-color: var(--secondaryColor);
+  border-radius: 16px;
+  /* -webkit-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75); */
+}
+
+.managePrevNextPageWrapper {
+  width: 98%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+
+.AcceptRejctButton {
+  margin: 0px 5px;
+  color: var(--secondaryColor);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.ConfirmationModalContainer {
+  height: 40%;
+  width: 30%;
+  /* padding: 2% ; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: var(--secondaryColor);
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+}
+
+.ConfirmationButton {
+  margin: 0px 5px;
+  color: var(--secondaryColor);
+  border: none;
+  /* border-radius: 5px; */
+  padding: 10px 24px;
+}
+
+.loginCardBottomContainer {
+  width: 74%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.emailInputBoxWrapper {
+  /* border-bottom: 1px solid royalblue; */
+  height: 90px;
+  width: 100%;
+  /* margin: 0px auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* .emailInputBox {
+  width: 40%;
+  background-color: tan;
+  border: solid;
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  color:black;
+
+} */
+
+.emailInputBox::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: grey;
+  font-size: small;
+  opacity: 1;
+  /* padding: 2%; */
+  /* Firefox */
+}
+
+.emailInputBox {
+  width: 98%;
+  background-color: var(--Color7);
+  border: 1px solid var(--Color8);
+  height: 50%;
+  font-size: 16px;
+  color: var(--Color3);
+  border-radius: 6px;
+}
+
+.mobileInputHeading {
+  margin: 0px;
+  height: 35%;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Inter', sans-serif;
+}
+
+.inputBlock {
+  width: 100%;
+  height: 46%;
+}
+
+.errorBlock {
+  color: var(--blockedRedColor);
+  margin-top: 8px;
+}
+
+.OtpContainerWrapper {
+  display: flex;
+  flex: 1.3;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.sendOtpBlock {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.OtpInnerContainerWrapper {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.otpBlock {
+  height: 10%;
+  width: 100%;
+  color: var(--Color3);
+  margin: 0px;
+}
+
+.submitButton {
+  height: 28%;
+  width: 100%;
+  color: var(--secondaryColor);
+  background-color: var(--primaryColor);
+  border: none;
+  text-align: center;
+  padding: 6px 0px;
+  margin: 0px auto;
+  border-radius: 10px;
+  /* justify-content: center; */
+}
+
+.reSendOtpBlock {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  cursor: pointer;
+
+}
+
+.reSendOtpTitle {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  color: var(--Color3);
+  font-size: 2px;
+  text-align: right;
+  text-decoration-line: underline;
+}
+
+.otpInputBlock {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.even {
+  background-color: white;
+}
+
+.odd {
+  background-color: #CEFDFF;
+}
+
+
+.OneLine {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-height: 2
+}
+
+.tableContainer {
+  width: 98%;
+  display: flex;
+  justify-content: right;
+  height: 56vh;
+  overflow-y: auto;
+  align-items: flex-start;
+}
+
+.tableContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
